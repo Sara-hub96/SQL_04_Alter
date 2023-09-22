@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "admin", "Reggina1914admin");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "admin", "admin");
             Statement statement = conn.createStatement();
 
             statement.executeUpdate("ALTER TABLE students ADD country VARCHAR(30);");
